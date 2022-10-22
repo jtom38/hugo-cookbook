@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language | default "en" }}">
+<head>
+    {{ partial "header.html" . }}
+    {{ partial "header.meta.html" .}}
+    {{ partial "script.menu.html" . }}
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{ partial "navbar" . }}
+    {{ partial "hero.html" . }}
+    <div class="container">
+        <br>
+        {{ if $.Site.Params.UseListRows }}
+        {{ partial "list.rows.html" . }}
+        {{ end }}
+        
+        {{ if $.Site.Params.UseCardView }}
+        {{ partial "list.cards.html" . }}
+        {{ end }}
+    </div>
+    {{ partial "footer" . }}
+</body>
+

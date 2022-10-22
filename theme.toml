@@ -1,0 +1,17 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "cookbook"
+license = "MIT"
+licenselink = "https://github.com/jtom38/hugo-cookbook/blob/master/LICENSE.md"
+description = "Digital cookbook template for Hugo built with Bulma CSS."
+homepage = "https://github.com/jtom38/hugo-cookbook"
+repo = "https://github.com/jtom38/hugo-cookbook"
+tags = ["cookbook", "search", "recipes"]
+features = ["documentation", "menu", "nested sections", "search"]
+min_version = 0.25
+
+[author]
+  name = "James Tombleson"
+  homepage = "https://github.com/jtom38/hugo-cookbook"
+

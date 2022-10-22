@@ -1,0 +1,49 @@
+<div class="container mt-8">
+    
+    {{ range .RegularPages }}
+
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+
+                    <div class="media-left">
+                        <figure class="image is-128x128">
+                            <a href="{{ .Permalink }}" >
+                                <img src="{{ .Site.BaseURL }}{{ .File.Dir }}thumbnail.png" alt="" >
+                            </a>
+                        </figure>
+                    </div>
+                    
+                    <div class="media-content">
+                        <p class="title is-4">
+                            <a href="{{ .Permalink }}"> {{ .Title }}</a>
+                        </p>
+                        <p class="subtitle is-6">{{ .Params.subtitle }}</p>
+                        
+                        {{ with .Params.tags }}
+                        <div class="buttons">
+                            {{ range . }}
+                            <button class="button">
+                                <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                            </button>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+
+
+                        {{ with .Params.categories }}
+                        <div class="buttons">
+                            {{ range . }}
+                            <button class="button">
+                                <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                            </button>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    
+</div>
