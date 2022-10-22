@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+
+    <div class="columns is-desktop">
+
+        <div class="column">
+
+            {{ range first 3 .RegularPages }}
+                {{ partial "list.card.html" . }}
+            <br>
+            {{ end }}
+        </div>
+
+        <div class="column">
+            {{ range first 3 (after 3 .RegularPages ) }}
+                {{ partial "list.card.html" . }}
+            <br>
+            {{ end }}
+        </div>
+
+        <div class="column">
+            {{ range first 3 (after 6 .RegularPages ) }}
+                {{ partial "list.card.html" . }}
+            <br>
+            {{ end }}
+        </div>
+    </div>
+
+
+</div>

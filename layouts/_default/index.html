@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language | default "en" }}">
+<head>
+    {{ partial "header.html" . }}
+    {{ partial "header.meta.html" . }}
+    {{ partial "script.menu.html" . }}
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{ partial "navbar" . }}
+    {{ partial "hero.html" . }}
+    
+    <div class="container is-8">
+        <br>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </div>
+    {{ partial "footer" . }}
+</body>
