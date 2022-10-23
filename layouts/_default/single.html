@@ -18,13 +18,21 @@
         </div>
         <div class="level-item has-text-centered">
             <div>
+                <p class="heading">Original Site</p>
+                <div class="button">
+                    <a href="{{ .Params.parenturl }}">Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
                 <p class="heading">Tags</p>
                 <div class="buttons">
                     {{ with .Params.tags }}
         
                     {{ range . }}
                     <button class="button">
-                        <a href="{{ " tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
                     </button>
                     {{ end }}
         
