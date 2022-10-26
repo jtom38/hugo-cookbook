@@ -32,9 +32,10 @@ Next time you build your project, Go/hugo will go download the repo for this the
 - [x] Meta Tags
 - [x] Favicon
 - [x] Hugo Module Support
-- [ ] Pagenation
+- [ ] Pagination
 - [ ] Recipe Search
 - [ ] Card Layout
+- [ ] Dynamic Navbar
 
 ## Contribute
 
