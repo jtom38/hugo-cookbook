@@ -19,13 +19,13 @@
         <div class="navbar-start">
         </div>
         <div class="navbar-end">
-            <a class="navbar-item" href="{{ .Site.BaseURL }}recipes">Recipes</a>
-            <a class="navbar-item" href="{{ .Site.BaseURL }}tags">Tags</a>
-            <a class="navbar-item" href="{{ .Site.BaseURL }}cuisine">Cuisine</a>
-            <a class="navbar-item" href="{{ .Site.BaseURL }}course">Course</a>
+            <a class="navbar-item" href="{{ .Site.BaseURL }}/recipes">Recipes</a>
+            <a class="navbar-item" href="{{ .Site.BaseURL }}/tags">Tags</a>
+            <a class="navbar-item" href="{{ .Site.BaseURL }}/cuisine">Cuisine</a>
+            <a class="navbar-item" href="{{ .Site.BaseURL }}/course">Course</a>
 
             {{ if $.Site.Params.DisplayRssButton }} 
-            <a class="navbar-item" href="{{ .Site.BaseURL }}index.xml">
+            <a class="navbar-item" href="{{ .Site.BaseURL }}/index.xml">
                 <img src="{{ .Site.BaseURL }}icons/ionicons/logo-rss.svg" width="32" height="32" />
             </a>
             {{ end }}
